@@ -2,7 +2,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
 html,
-body,
+body, .container
 {
   height: 100vh;
   margin: 0;
@@ -13,10 +13,9 @@ body,
   background-color: black;
 }
 
-.container {
-  width: 100%;
-    background: linear-gradient(132deg, gray, white);
-    background-size: 200% 50%;
+body {
+    background: linear-gradient(132deg, black, #494949, black);
+    background-size: 400% 400%;
     animation: BackgroundGradient 25s ease infinite;
 }
 
@@ -107,11 +106,6 @@ header h1 {
 }
 
 
-.container {
-  /*background: black;*/
-  /*margin-bottom: 2em;*/
-}
-
 .navbar {
   width: 100%;
   background-color: black;
@@ -129,11 +123,14 @@ header h1 {
 }
 
 .navbar a:hover {
-  background-color: #000;
+  background-color: #202020;
+  color: #DCDCDC;
 }
 
 .navbar a.active {
-  background-color: #4CAF50;
+  background-color: #222222;
+  color: #DCDCDC;
+  text-shadow: 0.8px 0.8px 0.8px white;
 }
 
 @media screen and (max-width: 500px) {
@@ -316,3 +313,25 @@ header h1 {
   transform: scale(1) rotateZ(360deg);
 }
 /*HOVERBOX END*/
+
+
+/*SLIDESHOW*/
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+/*Slideshow Ends*/
